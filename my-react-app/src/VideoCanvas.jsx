@@ -1,10 +1,13 @@
 import { useEffect, useRef } from 'react';
 import './index.css';
+import headphonePotato from './assets/headphone-potato.png'; 
+import sleepingPotato from './assets/sleeping-potato.png';
+import cloverPotato from './assets/clover-potato.png';
 
 export default function VideoCanvas() {
+  
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
-
   useEffect(() => {
     const video = videoRef.current;
     const canvas = canvasRef.current;
@@ -41,24 +44,32 @@ export default function VideoCanvas() {
   return (
     <>
       <div style={{
-        color: '#ffffff',
+        color: '#181717',
         textAlign: 'center',
         fontFamily: "'Press Start 2P', cursive",
         fontSize: '22px',
         fontWeight: 'bold',
         padding: '30px',
+        backgroundColor: '#2dff30',
+        margin: '20px',
       }}>
         🎶Gesture Controlled Music Player🎶
+        
       </div>
 
      
       <div style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
         
         <video ref={videoRef} autoPlay muted playsInline style={{ display: 'none' }} />
-        
+        <div style={{ position: 'relative' }}> 
+          <img src={headphonePotato} alt="Music potato" style={{ width: '200px', height: '200px', marginBottom: '10px', position: 'absolute', zIndex: 1}} />
+        </div>
+        <div style={{ position: 'relative' }}> 
+          <img src={headphonePotato} alt="Music potato" style={{ width: '200px', height: '200px', marginBottom: '10px', position: 'absolute', zIndex: 1}} />
+        </div>
         <div style={{
           padding: '10px',
-          backgroundColor: '#4f41ba',        
+          backgroundColor: '#28ff10',        
           border: '10px outset #d311a9',      
           borderRadius: '24px',              
           boxShadow: '0 8px 24px rgba(211, 17, 169, 0.2)', 
@@ -75,6 +86,12 @@ export default function VideoCanvas() {
             }} 
           />
 
+        </div>
+        <div style={{ position: 'relative' }}> 
+          <img src={sleepingPotato} alt="Music potato" style={{ width: '200px', height: '200px', marginBottom: '10px', position: 'absolute', top: '370px', left: '-120px', zIndex: 1}} />
+        </div>
+        <div style={{ position: 'relative' }}> 
+          <img src={cloverPotato} alt="clover potato" style={{ width: '200px', height: '200px', marginBottom: '10px', position: 'absolute', top: '390px', right: '540px', zIndex: 1}} />
         </div>
       </div>
       <div style={{
