@@ -44,16 +44,14 @@ export default function VideoCanvas() {
   return (
     <>
       <div style={{
-        color: '#181717',
+        color: '#080808',
         textAlign: 'center',
         fontFamily: "'Press Start 2P', cursive",
         fontSize: '22px',
         fontWeight: 'bold',
-        padding: '30px',
-        backgroundColor: '#2dff30',
-        margin: '20px',
+        padding: ' 50px 0 0 0',
       }}>
-        🎶Gesture Controlled Music Player🎶
+        Gesture Controlled Music Player
         
       </div>
 
@@ -69,8 +67,8 @@ export default function VideoCanvas() {
         </div>
         <div style={{
           padding: '10px',
-          backgroundColor: '#28ff10',        
-          border: '10px outset #d311a9',      
+          backgroundColor: '#9cdc95',        
+          border: '10px outset #dc80c8',      
           borderRadius: '24px',              
           boxShadow: '0 8px 24px rgba(211, 17, 169, 0.2)', 
         }}>
